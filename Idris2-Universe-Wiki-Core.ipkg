@@ -1,0 +1,22 @@
+package Idris2-Universe-Wiki-Core
+version = 0.3.0
+executable = universe-verify-core
+main = MainCore
+opts = "--codegen chez"
+
+depends = base,
+          Idris2-Multiset-Core,
+          Idris2-Multiset-Transform,
+          Idris2-Multiset-Binary,
+          Idris2-Multiset-Ternary,
+          Idris2-Geometry,
+          Idris2-Physics,
+          Idris2-Hadron,
+          Idris2-Chemistry,
+          Idris2-Biology,
+          Idris2-Universe
+
+sourcedir = "Library/Wiki"
+
+modules = Verification.Witnesses.UnifiedWitnesses,
+          MainCore

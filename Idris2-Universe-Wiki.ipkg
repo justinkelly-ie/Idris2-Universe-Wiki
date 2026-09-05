@@ -2,6 +2,7 @@ package Idris2-Universe-Wiki
 version = 0.3.0
 executable = universe-verify
 main = Main
+opts = "--codegen chez"
 
 depends = base,
           Idris2-Multiset-Core,

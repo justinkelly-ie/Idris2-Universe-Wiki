@@ -1,6 +1,5 @@
 module Main
 
-import System.Clock
 import Language.Reflection
 import Core.BoxInt
 import Core.Multiset
@@ -236,7 +235,6 @@ main : IO ()
 
 
 main = do
-  t0 <- clockTime Monotonic
   putStrLn "========================================================"
   putStrLn "   Idris2-Universe Verification & Cosmological Suite   "
   putStrLn "   (Pure Elaborator Reflection + QTT Architecture)      "
@@ -514,7 +512,7 @@ main = do
   putStrLn $ "  [TEST 89] Stochastic Expansion & Epsilon Packet Flow:  " ++ (if auditStochasticRedistributionConservationProof && auditDoublyStochasticEpsilonRoutingProof then "PASSED ✅" else "FAILED ❌")
   putStrLn $ "  [TEST 90] Box Difference Quadrance & Rational Spread:  " ++ (if auditBoxPythagorasProof && auditBoxCollinearitySpreadProof then "PASSED ✅" else "FAILED ❌")
   putStrLn $ "  [TEST 91] Information Quadrance & Vexel Spread Angles: " ++ (if auditInformationQuadranceProof && auditVexelSpreadClassificationProof then "PASSED ✅" else "FAILED ❌")
-  putStrLn $ "  [TEST 92] Caret-FIA Boltzmann Partition & Free Energy: " ++ (if auditCaretBoltzmannPartitionProofExport && auditCaretHelmholtzMinimizationProof then "PASSED ✅" else "FAILED ❌")
+  putStrLn $ "  [TEST 92] Caret-FIA Boltzmann Partition & Free Energy: " ++ (if auditCaretBoltzmannPartitionProofExport && auditDiscreteHelmholtzMinimizationProofExport then "PASSED ✅" else "FAILED ❌")
   putStrLn $ "  [TEST 93] Complete Stellar Fusion Balance Network:     " ++ (if auditCompleteStellarFusionBalanceNetworkProof then "PASSED ✅" else "FAILED ❌")
   putStrLn $ "  [TEST 94] Doubly Stochastic RG Decimation & Flow:      " ++ (if auditRGMagicMaxelDecimationProofExport then "PASSED ✅" else "FAILED ❌")
   putStrLn $ "  [TEST 95] Rational Kepler Laws & Orbital Spread:       " ++ (if auditRationalKeplerLawsProofExport then "PASSED ✅" else "FAILED ❌")
@@ -550,7 +548,7 @@ main = do
   putStrLn $ "  [TEST 125] Law 39: Discrete MWC Allosteric Cooperativity:" ++ (if auditAllostericCooperativityProofExport then "PASSED ✅" else "FAILED ❌")
   putStrLn $ "  [TEST 126] Law 40: Discrete Ribosomal Translation:      " ++ (if auditRibosomalTranslationProofExport then "PASSED ✅" else "FAILED ❌")
   putStrLn $ "  [TEST 127] Law 41: Discrete Kerr Metric & Penrose:       " ++ (if auditRotatingSpacetimeProofExport then "PASSED ✅" else "FAILED ❌")
-  putStrLn $ "  [TEST 128] Law 42: Discrete Alfvén MHD Flux Freezing:    " ++ (if auditMagnetohydrodynamicsProof then "PASSED ✅" else "FAILED ❌")
+  putStrLn $ "  [TEST 128] Law 42: Discrete Alfvén MHD Flux Freezing:    " ++ (if auditMagnetohydrodynamicsProofExport then "PASSED ✅" else "FAILED ❌")
   putStrLn $ "  [TEST 129] Law 43: Discrete Chandrasekhar Limit:        " ++ (if auditDegeneracyMassLimitProofExport then "PASSED ✅" else "FAILED ❌")
   putStrLn $ "  [TEST 130] Law 44: Discrete Hawking-Page Phase Transition:" ++ (if auditBlackHolePhaseTransitionProofExport then "PASSED ✅" else "FAILED ❌")
   putStrLn $ "  [TEST 131] Empirical Scientific Dataset Consistency:    " ++ (if auditScientificObservationDatasetProofExport then "PASSED ✅" else "FAILED ❌")
@@ -616,11 +614,7 @@ main = do
 
 
   putStrLn ""
-  t1 <- clockTime Monotonic
-  let elapsed = timeDifference t1 t0
   putStrLn "All Cosmological Proof Witnesses & Literate Invariants Verified!"
-  putStrLn $ "  ⚡ Total Runtime Evidence Benchmark: " ++ show elapsed
-
   putStrLn "========================================================"
 
 
