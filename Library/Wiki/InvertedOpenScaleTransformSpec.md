@@ -37,8 +37,25 @@ prop_scaleTransformComposition : BoxInt -> Bool
 prop_scaleTransformComposition val =
   composeScaleTransform {b = BoxInt} val == val
 
+||| Property 3: Open InvertibleScaleTransform Inversion Law
+public export
+prop_invertibleScaleTransformInversion : BoxInt -> Bool
+prop_invertibleScaleTransformInversion val =
+  invertScaleTransform (scaleTransform {domainB = BoxInt} val) == val
+
+||| Property 4: Open InvertibleScaleTransform Composition Law
+public export
+prop_invertibleScaleTransformComposition : BoxInt -> Bool
+prop_invertibleScaleTransformComposition val =
+  composeInvertibleScaleTransform {b = BoxInt} val == val
+
 ||| Proof witness exporter for Inverted Open ScaleTransform Architecture
 public export
 auditInvertedOpenScaleTransformProof : Bool
-auditInvertedOpenScaleTransformProof = True
+auditInvertedOpenScaleTransformProof =
+  prop_scaleTransformReflexivity (intToBoxInt 42) &&
+  prop_scaleTransformComposition (intToBoxInt 42) &&
+  prop_invertibleScaleTransformInversion (intToBoxInt 42) &&
+  prop_invertibleScaleTransformComposition (intToBoxInt 42)
+
 ```
