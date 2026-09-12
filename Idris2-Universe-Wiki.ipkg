@@ -19,6 +19,12 @@ depends = base,
 sourcedir = "Library/Wiki"
 
 modules = Verification.Witnesses.UnifiedWitnesses,
+          Verification.Witnesses.MotivicGalois,
+          Verification.TestHarness,
+          Verification.FoundationsSuite,
+          Verification.PhysicalLawsSuite,
+          Verification.EmpiricalObservationSuite,
+          Verification.ScalePipelineSuite,
           Main,
           Foundations.Discrete_Box_Algebra_and_Contour_Geometry,
           Foundations.Multiset_Transform_2_Categories_and_Tensor_Operators,
