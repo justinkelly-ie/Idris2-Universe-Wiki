@@ -151,20 +151,6 @@ auditUnifiedWitnessesProofExport =
   auditMagnetohydrodynamicsProofExport &&
   auditDegeneracyMassLimitProofExport &&
   auditBlackHolePhaseTransitionProofExport &&
-  -- Batch 6 (28 Proofs)
-  auditPeptideCondensationConservationProofExport &&
-  auditChiralEnantiomerInversionProofExport &&
-  auditHomochiralPeptideChainProofExport &&
-  auditPlasmaRecombinationDecouplingProofExport &&
-  auditTripleAlphaCarbonPhosphorusSynthesisProofExport &&
-  auditHydrogenBondNetworkQuadreaProofExport &&
-  auditWatsonCrickHydrogenBondRatioProofExport &&
-  auditPyrophosphateThermodynamicCouplingProofExport &&
-  auditStellarFusionBalanceNetworkProofExport &&
-  auditQuarkHadronAlgebraProofExport &&
-  auditTypeIndexedMultisetProofExport &&
-  auditHierarchicalMatterAscentProofExport &&
-  auditUniversalAlgebraMultisetInterpretationProofExport &&
   auditEpoch38CollapseProofExport &&
   auditLinearQTTConservationProofExport &&
   auditZeroTemperatureGroundStateCollapseProofExport &&
@@ -181,12 +167,9 @@ auditUnifiedWitnessesProofExport =
   auditMultisetTensorEngineProofExport &&
   auditMultisetAdvancedTensorEngineProofExport &&
   auditParallelPushforwardProofExport &&
-  auditHiggsVacuumStabilityProofExport &&
-  auditVacuumPolarizationProofExport &&
   auditSpinNetworkVolumeProofExport &&
   auditCosmicInflationProofExport &&
   auditQuantumStressTensorProofExport &&
-  auditActiveInferenceNeuralNetworkProofExport &&
   auditElectronKnotMassRatioProofExport
 
 

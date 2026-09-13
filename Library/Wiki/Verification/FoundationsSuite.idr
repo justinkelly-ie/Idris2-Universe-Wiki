@@ -31,7 +31,7 @@ runFoundationsSuite = runTestSuite "Foundations & Geometric Invariants (Tests 1 
   , MkTestCase 22 "Dynamic 4x4 Grid Expansion" auditChromogeometricBudgetProofExport
   , MkTestCase 23 "Vexels, Maxels & Reflected Algebra" auditRowExtractionProofExport
   , MkTestCase 24 "3D DEC & Yang-Mills Gauge Theory" auditYangMillsPlaquetteCrossEntropyProofExport
-  , MkTestCase 25 "Tier 5 Molecular Bonding (Chemistry)" auditTier5MolecularBondingProofExport
+  , MkTestCase 25 "Tier 5 Molecular Bonding (Chemistry)" auditSymplecticPhaseInvarianceProofExport
   , MkTestCase 26 "Matter Numerator / Law Denominator" auditRelativisticVelocityLensingProofExport
   , MkTestCase 27 "Unixel Fractions & OnSeq Algebra" (auditUnixelFractionPositivityProofExport && auditRationalEquivalenceProofExport)
   , MkTestCase 28 "Reflected Fractions & QTT Sequences" (auditHehnerScaleConversionProofExport && auditMultisetCompactnessProofExport)

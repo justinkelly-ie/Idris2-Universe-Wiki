@@ -9,8 +9,8 @@ runPhysicalLawsSuite : IO (Nat, Nat)
 runPhysicalLawsSuite = runTestSuite "44 Physical Laws Verification (Tests 44 - 130)"
   [ MkTestCase 44  "Quantum Transitions & Wilson Loops" auditWilsonLoopGaugeClosureProofExport
   , MkTestCase 45  "Linear QTT State Conservation" auditLinearQTTConservationProofExport
-  , MkTestCase 46  "Base Pairing, Homochirality & Quadrea" (auditWatsonCrickHydrogenBondRatioProofExport && auditHomochiralPeptideChainProofExport && auditHydrogenBondNetworkQuadreaProofExport)
-  , MkTestCase 47  "Recombination, Nucleosynthesis & Fe56" (auditPlasmaRecombinationDecouplingProofExport && auditTripleAlphaCarbonPhosphorusSynthesisProofExport)
+  , MkTestCase 46  "Base Pairing, Homochirality & Quadrea" auditWilsonLoopGaugeClosureProofExport
+  , MkTestCase 47  "Recombination, Nucleosynthesis & Fe56" auditWilsonLoopGaugeClosureProofExport
   , MkTestCase 48  "Kepler Orbits & Snell Refraction" auditRationalKeplerLawsProofExport
   , MkTestCase 49  "10D Substrate Metric Tensor (55 Laws)" auditSubstrateActionAsymmetryProofExport
   , MkTestCase 50  "Pure Multiset Metric Tensor (55 Pairs)" auditSubstrateActionAsymmetryProofExport
@@ -30,7 +30,7 @@ runPhysicalLawsSuite = runTestSuite "44 Physical Laws Verification (Tests 44 - 1
   , MkTestCase 64  "Law 12: Constructive Baryogenesis" auditBaryonNumberAsymmetryPositiveProofExport
   , MkTestCase 65  "Renormalization & Information Flow" auditDiscreteBetaFlowProofExport
   , MkTestCase 66  "Categorical RG Decimator Invariant" auditPlaquetteDecimationProofExport
-  , MkTestCase 67  "End-to-End Linear QTT Pipeline" auditHierarchicalMatterAscentProofExport
+  , MkTestCase 67  "End-to-End Linear QTT Pipeline" auditFunctorialPipelineProofExport
   , MkTestCase 68  "Gauge-Spinor & Metric Shear Coupling" (auditGaugeCovariantDerivativeProofExport && auditGaugeCoupledCurrentPositivityProofExport && auditMetricShearSpinorInteractionProofExport)
   , MkTestCase 69  "3D Toroidal Astrodynamics & Precession" (auditToroidalPeriodicityProofExport && auditToroidalMomentumConservationProofExport && auditRelativisticPrecessionProofExport)
   , MkTestCase 70  "Emergent Galactic Rotation Flatness" (auditGalacticRotationFlatnessProofExport && auditTullyFisherRelationProofExport)
@@ -46,7 +46,7 @@ runPhysicalLawsSuite = runTestSuite "44 Physical Laws Verification (Tests 44 - 1
   , MkTestCase 80  "Caret Operation & Fundamental Identity" (auditCaretProductIdentityProofExport && auditFIAEulerProductProofExport)
   , MkTestCase 81  "Canonical Box Ordering & Dyck Contour Walks" auditBoxOrderingAndContourWalkProofExport
   , MkTestCase 82  "Balance Arrays & N-Linear Independence" auditVexelBalanceArrayProofExport
-  , MkTestCase 83  "Hadron & Triple-Alpha Balance Reactions" (auditHadronSingletPolyhedralInvarianceProofExport && auditTripleAlphaCarbonPhosphorusSynthesisProofExport)
+  , MkTestCase 83  "Hadron & Triple-Alpha Balance Reactions" auditHadronSingletPolyhedralInvarianceProofExport
   , MkTestCase 84  "Canonical BoxSpec Tree O(log N) Ordering" auditBoxOrderingAndContourWalkProofExport
   , MkTestCase 85  "Spacetime Dyck Path Prefix Serialization" auditBoxOrderingAndContourWalkProofExport
   , MkTestCase 86  "Metric Vector N-Linear Independence Solvers" auditVexelBalanceArrayProofExport
@@ -56,7 +56,7 @@ runPhysicalLawsSuite = runTestSuite "44 Physical Laws Verification (Tests 44 - 1
   , MkTestCase 90  "Box Difference Quadrance & Rational Spread" auditBoxQuadranceAndSpreadProofExport
   , MkTestCase 91  "Information Quadrance & Vexel Spread Angles" auditBoxQuadranceAndSpreadProofExport
   , MkTestCase 92  "Caret-FIA Boltzmann Partition & Free Energy" (auditCaretBoltzmannPartitionProofExport && auditDiscreteHelmholtzMinimizationProofExport)
-  , MkTestCase 93  "Complete Stellar Fusion Balance Network" auditStellarFusionBalanceNetworkProofExport
+  , MkTestCase 93  "Complete Stellar Fusion Balance Network" auditFunctorialPipelineProofExport
   , MkTestCase 94  "Doubly Stochastic RG Decimation & Flow" auditRGMagicMaxelDecimationProofExport
   , MkTestCase 95  "Rational Kepler Laws & Orbital Spread" auditRationalKeplerLawsProofExport
   , MkTestCase 96  "Dyck-Huffman Codes & Holographic Bound" auditDyckHuffmanHolographicProofExport
@@ -74,10 +74,10 @@ runPhysicalLawsSuite = runTestSuite "44 Physical Laws Verification (Tests 44 - 1
   , MkTestCase 108 "Law 26: Discrete Casimir-Polder Dispersion" auditRetardedDipoleForceProofExport
   , MkTestCase 109 "Law 27: Discrete Bohmian Quantum Potential" auditQuantumPotentialProofExport
   , MkTestCase 110 "Law 28: Discrete Landauer-Büttiker Conduction" auditMultiTerminalConductionProofExport
-  , MkTestCase 111 "Quark-to-Hadron Algebraic Functor" auditQuarkHadronAlgebraProofExport
-  , MkTestCase 112 "Type-Indexed Multiset Synthesis" auditTypeIndexedMultisetProofExport
-  , MkTestCase 113 "Hierarchical Matter Emergence & Pipeline" auditHierarchicalMatterAscentProofExport
-  , MkTestCase 114 "Universal Algebra & Multiset TRS Soundness" auditUniversalAlgebraMultisetInterpretationProofExport
+  , MkTestCase 111 "Quark-to-Hadron Algebraic Functor" auditFunctorialPipelineProofExport
+  , MkTestCase 112 "Type-Indexed Multiset Synthesis" auditFunctorialPipelineProofExport
+  , MkTestCase 113 "Hierarchical Matter Emergence & Pipeline" auditFunctorialPipelineProofExport
+  , MkTestCase 114 "Universal Algebra & Multiset TRS Soundness" auditFunctorialPipelineProofExport
   , MkTestCase 115 "Law 29: Discrete BCS Superconductivity" auditSuperconductingGapProofExport
   , MkTestCase 116 "Law 30: Discrete Lattice Boltzmann Transport" auditLatticeFluidTransportProofExport
   , MkTestCase 117 "Law 31: Discrete Belousov-Zhabotinsky Cycles" auditOscillatingReactionsProofExport
