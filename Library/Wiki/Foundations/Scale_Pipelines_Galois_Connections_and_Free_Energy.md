@@ -1,18 +1,18 @@
 # 🌌 Chapter 3: Scale Pipelines, Galois Connections & Free Energy Minimization
 
-Physical systems evolve across multiple spatial and temporal scales—from subatomic quark multisets to macroscopic biological structures. To connect microscopic particle interactions with macroscopic thermodynamics without loss of information, this framework uses **Galois Adjunctions** ($f_* \dashv f^*$) and **Discrete Helmholtz Free Energy Minimization**.
+Physical systems evolve across multiple spatial and temporal scales—from subatomic quark multisets to macroscopic biological structures. To connect microscopic particle interactions with macroscopic thermodynamics without loss of information, this framework uses **Galois Adjunctions** ($f_* \dashv f^*$), type-safe **ScaleFunctor** pipelines, and **Discrete Helmholtz Free Energy Minimization**.
 
 ---
 
-## 1. Galois Adjunctions Across Physical Scales
+## 1. Galois Adjunctions Across Physical ScaleFunctors
 
-A scale jump between a fine-grained state space $A$ and a coarse-grained state space $B$ is defined by a pair of adjoint multiset functors:
+A scale jump between a fine-grained state space $A$ (`SubatomicLevel`) and a coarse-grained state space $B$ (`CellLevel`) is defined by a pair of adjoint multiset functors:
 
 \[
 f_* : A \longrightarrow B \quad (\text{Algebraic Pushforward / Aggregation})
 \]
 \[
-f^* : B \longrightarrow A \quad (\text{Reverse-Causal Pullback / Reconstruction})
+f^* : B \longrightarrow A \quad (\text{Reverse-Causal Pullback / Reconstruction via } \text{reconstructFromScaleFunctor})
 \]
 
 The adjunction relationship $f_* \dashv f^*$ enforces exact structural duality at compile time:
@@ -44,7 +44,7 @@ Under natural transform evolution, the system minimizes discrete free energy, ac
 
 ## 3. Executable Literate Verification
 
-The following literate Idris 2 module verifies scale pipeline pushforward contraction and free energy ground state minimization:
+The following literate Idris 2 module verifies scale pipeline pushforward contraction, `ScaleFunctor` reconstruction, and free energy ground state minimization:
 
 ```idris
 module Foundations.Scale_Pipelines_Galois_Connections_and_Free_Energy
@@ -53,6 +53,8 @@ import Core.BoxInt
 import Core.Multiset
 import Core.UnixelFraction
 import Core.TransformMultiset
+import Core.ScaleCategory
+import Core.ScalePipeline
 import Derivation.FreeEnergyMinimizer
 
 %default total
