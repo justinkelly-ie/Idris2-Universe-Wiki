@@ -26,7 +26,7 @@ module Wiki.Geometry.Parabolic_Dissipation_and_Recombination
 import Core.BoxInt
 import Core.Multiset
 import Core.UnixelFraction
-import Core.TransformMultiset
+import Core.MaxelTransform
 
 %default total
 
@@ -35,7 +35,7 @@ import Core.TransformMultiset
 public export
 evidence_parabolic_recombination : Bool
 evidence_parabolic_recombination =
-  let t : TransformMultiset Nat Nat = mkTransformBox ParabolicSector unitUnixelFraction [((1, 1), intToBoxInt 1)]
+  let t : MaxelTransform Nat Nat = mkTransformBox ParabolicSector unitUnixelFraction [((1, 1), intToBoxInt 1)]
       m : Box Nat = insertBox 1 (intToBoxInt 55) emptyBox
       pushed = applyPushforwardContraction t m
   in lookupBox 1 pushed == intToBoxInt 55

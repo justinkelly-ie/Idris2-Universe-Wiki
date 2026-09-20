@@ -26,7 +26,7 @@ module Wiki.Geometry.Hyperbolic_Gauge_Flux_and_Mixing
 import Core.BoxInt
 import Core.Multiset
 import Core.UnixelFraction
-import Core.TransformMultiset
+import Core.MaxelTransform
 
 %default total
 
@@ -35,7 +35,7 @@ import Core.TransformMultiset
 public export
 evidence_hyperbolic_gauge_flux : Bool
 evidence_hyperbolic_gauge_flux =
-  let t : TransformMultiset Nat Nat = mkTransformBox HyperbolicSector unitUnixelFraction [((1, 2), intToBoxInt 2)]
+  let t : MaxelTransform Nat Nat = mkTransformBox HyperbolicSector unitUnixelFraction [((1, 2), intToBoxInt 2)]
       m : Box Nat = insertBox 1 (intToBoxInt 5) emptyBox
       pushed = applyPushforwardContraction t m
   in lookupBox 2 pushed == intToBoxInt 10

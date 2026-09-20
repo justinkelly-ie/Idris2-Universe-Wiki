@@ -26,7 +26,7 @@ module Wiki.Geometry.Elliptic_Bound_State_Confinement
 import Core.BoxInt
 import Core.Multiset
 import Core.UnixelFraction
-import Core.TransformMultiset
+import Core.MaxelTransform
 
 %default total
 
@@ -35,7 +35,7 @@ import Core.TransformMultiset
 public export
 evidence_elliptic_confinement : Bool
 evidence_elliptic_confinement =
-  let t : TransformMultiset Nat Nat = mkTransformBox EllipticSector unitUnixelFraction [((1, 1), intToBoxInt 3)]
+  let t : MaxelTransform Nat Nat = mkTransformBox EllipticSector unitUnixelFraction [((1, 1), intToBoxInt 3)]
       m : Box Nat = insertBox 1 (intToBoxInt 1) emptyBox
       pushed = applyPushforwardContraction t m
   in lookupBox 1 pushed == intToBoxInt 3

@@ -30,7 +30,7 @@ module Wiki.Geometry.Substrate_Free_Energy_and_Causal_Arrow
 import Core.BoxInt
 import Core.Multiset
 import Core.UnixelFraction
-import Core.TransformMultiset
+import Core.MaxelTransform
 import Derivation.FreeEnergyMinimizer
 
 %default total

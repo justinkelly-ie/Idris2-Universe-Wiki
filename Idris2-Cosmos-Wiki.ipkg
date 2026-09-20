@@ -1,8 +1,8 @@
-package Idris2-Universe-Wiki
+package Idris2-Cosmos-Wiki
 version = 0.3.0
 opts = "--codegen chez"
 
-depends = Idris2-Biology, Idris2-Chemistry, Idris2-Cosmology, Idris2-Electromagnetism, Idris2-Fields, Idris2-Geometry, Idris2-Hadron, Idris2-Multiset-Binary, Idris2-Multiset-Core, Idris2-Multiset-Ternary, Idris2-Multiset-Transform, Idris2-Physics, Idris2-QuantumComputing, Idris2-Thermodynamics, Idris2-Topology, Idris2-Universe, base, idris2-QuickCheck, linear
+depends = Idris2-Biology, Idris2-Chemistry, Idris2-Cosmology, Idris2-Electromagnetism, Idris2-Fields, Idris2-Geometry, Idris2-Hadron, Idris2-Multiset-Binary, Idris2-Multiset-Core, Idris2-Multiset-Ternary, Idris2-Multiset-Transform, Idris2-Physics, Idris2-QuantumComputing, Idris2-Thermodynamics, Idris2-Topology, Idris2-Cosmos, base, idris2-QuickCheck, linear
 sourcedir = "Library"
 
 modules = Wiki.EmpiricalMeasurementSpec,
@@ -31,4 +31,4 @@ modules = Wiki.EmpiricalMeasurementSpec,
           Wiki.Verification.Witnesses.UnifiedWitnesses
 
 main = Wiki.Main
-executable = universe-verify
+executable = cosmos-verify

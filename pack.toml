@@ -1,7 +1,7 @@
 [package]
-name = "Idris2-Universe-Wiki"
+name = "Idris2-Cosmos-Wiki"
 version = "0.3.0"
-ipkg = "Idris2-Universe-Wiki.ipkg"
+ipkg = "Idris2-Cosmos-Wiki.ipkg"
 
 [custom.all.Idris2-Multiset-Core]
 type = "local"
@@ -48,7 +48,7 @@ type = "local"
 path = "../Idris2-Biology"
 ipkg = "Idris2-Biology.ipkg"
 
-[custom.all.Idris2-Universe]
+[custom.all.Idris2-Cosmos]
 type = "local"
-path = "../Idris2-Universe"
-ipkg = "Idris2-Universe.ipkg"
+path = "../Idris2-Cosmos"
+ipkg = "Idris2-Cosmos.ipkg"

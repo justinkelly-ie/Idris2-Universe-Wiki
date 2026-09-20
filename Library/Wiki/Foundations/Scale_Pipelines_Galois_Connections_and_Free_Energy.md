@@ -52,7 +52,7 @@ module Wiki.Foundations.Scale_Pipelines_Galois_Connections_and_Free_Energy
 import Core.BoxInt
 import Core.Multiset
 import Core.UnixelFraction
-import Core.TransformMultiset
+import Core.MaxelTransform
 import Core.ScaleCategory
 import Core.ScalePipeline
 import Derivation.FreeEnergyMinimizer
@@ -70,7 +70,7 @@ proof_free_energy_ground_state = Derivation.FreeEnergyMinimizer.auditFreeEnergyM
 public export
 proof_scale_pipeline : Bool
 proof_scale_pipeline =
-  let t : TransformMultiset Nat Nat = mkTransformBox SubstrateSector unitUnixelFraction [((1, 1), intToBoxInt 2)]
+  let t : MaxelTransform Nat Nat = mkTransformBox SubstrateSector unitUnixelFraction [((1, 1), intToBoxInt 2)]
       m : Box Nat = insertBox 1 (intToBoxInt 10) emptyBox
       pushed = applyPushforwardContraction t m
   in lookupBox 1 pushed == intToBoxInt 20

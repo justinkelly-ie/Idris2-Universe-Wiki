@@ -60,7 +60,7 @@ module Wiki.Foundations.Multiset_Transform_2_Categories_and_Tensor_Operators
 import Core.BoxInt
 import Core.Multiset
 import Core.UnixelFraction
-import Core.TransformMultiset
+import Core.MaxelTransform
 
 %default total
 
@@ -69,7 +69,7 @@ import Core.TransformMultiset
 public export
 proof_identity_composition : Bool
 proof_identity_composition =
-  let idT : TransformMultiset Nat Nat = identityTransform [1]
+  let idT : MaxelTransform Nat Nat = identityTransform [1]
       m : Box Nat = insertBox 1 (intToBoxInt 5) emptyBox
       pushed = applyPushforwardContraction idT m
   in lookupBox 1 pushed == intToBoxInt 5
@@ -79,8 +79,8 @@ proof_identity_composition =
 public export
 proof_commutator_signature : Bool
 proof_commutator_signature =
-  let t1 : TransformMultiset Nat Nat = mkTransformBox EllipticSector unitUnixelFraction [((1, 2), intToBoxInt 3)]
-      t2 : TransformMultiset Nat Nat = mkTransformBox HyperbolicSector unitUnixelFraction [((2, 1), intToBoxInt 2)]
+  let t1 : MaxelTransform Nat Nat = mkTransformBox EllipticSector unitUnixelFraction [((1, 2), intToBoxInt 3)]
+      t2 : MaxelTransform Nat Nat = mkTransformBox HyperbolicSector unitUnixelFraction [((2, 1), intToBoxInt 2)]
       c12 = commutatorTransforms t1 t2
   in True
 ```
