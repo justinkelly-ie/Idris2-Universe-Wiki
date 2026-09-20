@@ -1,4 +1,4 @@
-module Verification.Witnesses.MotivicGalois
+module Wiki.Verification.Witnesses.MotivicGalois
 
 import Core.BoxInt
 import Core.UnixelFraction

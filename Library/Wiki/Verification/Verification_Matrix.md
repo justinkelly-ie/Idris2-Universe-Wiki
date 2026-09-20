@@ -25,9 +25,9 @@ If any physical law, conservation theorem, or metric determinant is violated dur
 The following literate Idris 2 module acts as the master entrypoint for the ecosystem audit, importing `UnifiedWitnesses` to verify all **163 compile-time macro reflection proofs** in a single pass:
 
 ```idris
-module Verification.Verification_Matrix
+module Wiki.Verification.Verification_Matrix
 
-import Verification.Witnesses.UnifiedWitnesses
+import Wiki.Verification.Witnesses.UnifiedWitnesses
 
 %default total
 

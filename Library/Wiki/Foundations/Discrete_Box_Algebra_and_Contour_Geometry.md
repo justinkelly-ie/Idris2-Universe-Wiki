@@ -57,7 +57,7 @@ Every discrete multiset tree configuration (`BoxSpec`) maps bijectively to a **c
 The following literate Idris 2 module verifies the fundamental algebraic laws of Box Arithmetic:
 
 ```idris
-module Foundations.Discrete_Box_Algebra_and_Contour_Geometry
+module Wiki.Foundations.Discrete_Box_Algebra_and_Contour_Geometry
 
 import Core.BoxInt
 import Core.Multiset

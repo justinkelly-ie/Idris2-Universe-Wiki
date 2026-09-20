@@ -47,7 +47,7 @@ Under natural transform evolution, the system minimizes discrete free energy, ac
 The following literate Idris 2 module verifies scale pipeline pushforward contraction, `ScaleFunctor` reconstruction, and free energy ground state minimization:
 
 ```idris
-module Foundations.Scale_Pipelines_Galois_Connections_and_Free_Energy
+module Wiki.Foundations.Scale_Pipelines_Galois_Connections_and_Free_Energy
 
 import Core.BoxInt
 import Core.Multiset

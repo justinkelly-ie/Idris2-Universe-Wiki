@@ -1,4 +1,4 @@
-module Verification.TestHarness
+module Wiki.Verification.TestHarness
 
 import System
 

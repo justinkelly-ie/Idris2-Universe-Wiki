@@ -55,7 +55,7 @@ If $[T_1, T_2] = \emptyset$, the two physical transforms commute and represent s
 The following literate Idris 2 module verifies transform composition and commutator algebra:
 
 ```idris
-module Foundations.Multiset_Transform_2_Categories_and_Tensor_Operators
+module Wiki.Foundations.Multiset_Transform_2_Categories_and_Tensor_Operators
 
 import Core.BoxInt
 import Core.Multiset

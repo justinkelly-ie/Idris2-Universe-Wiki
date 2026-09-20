@@ -1,4 +1,4 @@
-module Verification.Witnesses.UnifiedWitnesses
+module Wiki.Verification.Witnesses.UnifiedWitnesses
 
 import Reflect.InvariantAuditor
 

@@ -1,22 +1,35 @@
 package Idris2-Universe-Wiki-Applied
 version = 0.3.0
-executable = universe-verify-applied
-main = MainApplied
 opts = "--codegen chez"
 
-depends = base,
-          Idris2-Multiset-Core,
-          Idris2-Multiset-Transform,
-          Idris2-Multiset-Binary,
-          Idris2-Multiset-Ternary,
-          Idris2-Geometry,
-          Idris2-Physics,
-          Idris2-Hadron,
-          Idris2-Chemistry,
-          Idris2-Biology,
-          Idris2-Universe
+depends = Idris2-Biology, Idris2-Chemistry, Idris2-Cosmology, Idris2-Electromagnetism, Idris2-Fields, Idris2-Geometry, Idris2-Hadron, Idris2-Multiset-Binary, Idris2-Multiset-Core, Idris2-Multiset-Ternary, Idris2-Multiset-Transform, Idris2-Physics, Idris2-QuantumComputing, Idris2-Thermodynamics, Idris2-Topology, Idris2-Universe, base, idris2-QuickCheck, linear
+sourcedir = "Library"
 
-sourcedir = "Library/Wiki"
+modules = Wiki.EmpiricalMeasurementSpec,
+          Wiki.Foundations.Discrete_Box_Algebra_and_Contour_Geometry,
+          Wiki.Foundations.Multiset_Transform_2_Categories_and_Tensor_Operators,
+          Wiki.Foundations.Scale_Pipelines_Galois_Connections_and_Free_Energy,
+          Wiki.Geometry.Elliptic_Bound_State_Confinement,
+          Wiki.Geometry.Hyperbolic_Gauge_Flux_and_Mixing,
+          Wiki.Geometry.Parabolic_Dissipation_and_Recombination,
+          Wiki.Geometry.Substrate_Free_Energy_and_Causal_Arrow,
+          Wiki.Index,
+          Wiki.InvertedOpenScaleTransformSpec,
+          Wiki.Main,
+          Wiki.MultisetApplicativeMonoidAdjunctionSpec,
+          Wiki.Verification.Cosmological_Inferences_and_Deductions,
+          Wiki.Verification.EmpiricalObservationSuite,
+          Wiki.Verification.FoundationsSuite,
+          Wiki.Verification.Index,
+          Wiki.Verification.PhysicalLawsSuite,
+          Wiki.Verification.Physical_Laws_Bibliography_and_Sources,
+          Wiki.Verification.ScalePipelineSuite,
+          Wiki.Verification.Structural_Associativity_Proof,
+          Wiki.Verification.TestHarness,
+          Wiki.Verification.Type_Signatures_and_API_Catalog,
+          Wiki.Verification.Verification_Matrix,
+          Wiki.Verification.Witnesses.MotivicGalois,
+          Wiki.Verification.Witnesses.UnifiedWitnesses
 
-modules = Verification.Witnesses.UnifiedWitnesses,
-          MainApplied
+main = MainApplied
+executable = universe-verify-applied

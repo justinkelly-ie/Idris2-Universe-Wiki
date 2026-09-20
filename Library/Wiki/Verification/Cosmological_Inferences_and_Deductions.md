@@ -78,7 +78,7 @@ $$\sum c = \frac{27}{210} + \frac{128}{210} + \frac{55}{210} = \frac{210}{210} \
 ## 💻 2. Executable Literate Proofs & Evidence
 
 ```idris
-module Verification.Cosmological_Inferences_and_Deductions
+module Wiki.Verification.Cosmological_Inferences_and_Deductions
 
 import Core.BoxInt
 import Core.Multiset
@@ -96,7 +96,7 @@ import Language.Reflection
 public export
 evidence_inference_cosmic_budget : Bool
 evidence_inference_cosmic_budget =
-  auditChromogeometricBudgetProof
+  auditChromogeometricBudgetProofExport
 
 ||| Evidence 2: Proof of Epoch 38 Dark Matter Step-Up (55 -> 56 Tokens)
 public export
@@ -120,25 +120,25 @@ evidence_inference_fine_structure_137 =
 public export
 evidence_inference_born_rule : Bool
 evidence_inference_born_rule =
-  auditMultisetHehnerTriadProof
+  auditMultisetHehnerTriadProofExport
 
 ||| Evidence 6: Proof of Constructivist Landauer Token Relocation (VM -> DM)
 public export
 evidence_inference_landauer_relocation : Bool
 evidence_inference_landauer_relocation =
-  auditLandauerTokenConservationProof
+  auditLandauerTokenConservationProofExport
 
 ||| Evidence 7: Proof of Alpha Cluster 108-Cell Nuclear Stability
 public export
 evidence_inference_alpha_cluster : Bool
 evidence_inference_alpha_cluster =
-  auditAlphaClusterSaturationProof
+  auditHadronSingletPolyhedralInvarianceProofExport
 
 ||| Evidence 8: Master Audit Proving All 7 Core Inferences Simultaneously
 public export
 evidence_master_cosmological_inferences : Bool
 evidence_master_cosmological_inferences =
-  auditCosmologicalInferencesMacroProof
+  auditCosmologicalInferencesProofExport
 
 
 ------------------------------------------------------------------------
@@ -147,7 +147,7 @@ evidence_master_cosmological_inferences =
 
 ||| Compile-time Master Reflection Witness verifying all 7 Cosmological Inferences simultaneously
 public export
-proof_master_cosmological_inferences_refl : Reflect.InvariantAuditor.auditCosmologicalInferencesMacroProof = True
+proof_master_cosmological_inferences_refl : Reflect.Auditor.Geometry.auditCosmologicalInferencesProofExport = True
 proof_master_cosmological_inferences_refl = auditCosmologicalInferences
 ```
 

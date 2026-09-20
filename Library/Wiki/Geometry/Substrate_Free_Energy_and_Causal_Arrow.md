@@ -25,7 +25,7 @@ Because $g_{12} = 1$ while $g_{22} = 0$, state evolution is strictly asymmetric,
 The following literate Idris 2 module verifies the Substrate ground state free energy minimization:
 
 ```idris
-module Geometry.Substrate_Free_Energy_and_Causal_Arrow
+module Wiki.Geometry.Substrate_Free_Energy_and_Causal_Arrow
 
 import Core.BoxInt
 import Core.Multiset

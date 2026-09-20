@@ -32,7 +32,7 @@ Because `sumStructural` recursively shifts single `BoxInt` unit tokens without c
 ## 💻 2. Executable Literate Proofs & Evidence
 
 ```idris
-module Verification.Structural_Associativity_Proof
+module Wiki.Verification.Structural_Associativity_Proof
 
 import Core.BoxInt
 import Evolution.State

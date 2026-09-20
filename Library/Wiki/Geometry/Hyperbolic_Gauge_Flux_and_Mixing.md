@@ -21,7 +21,7 @@ The 128 Dyck-Epsilons represent the maximum information channel capacity allocat
 The following literate Idris 2 module verifies Hyperbolic gauge flux propagation:
 
 ```idris
-module Geometry.Hyperbolic_Gauge_Flux_and_Mixing
+module Wiki.Geometry.Hyperbolic_Gauge_Flux_and_Mixing
 
 import Core.BoxInt
 import Core.Multiset

@@ -1,8 +1,8 @@
-module Verification.FoundationsSuite
+module Wiki.Verification.FoundationsSuite
 
 import Reflect.InvariantAuditor
-import Verification.Witnesses.UnifiedWitnesses
-import Verification.TestHarness
+import Wiki.Verification.Witnesses.UnifiedWitnesses
+import Wiki.Verification.TestHarness
 
 export
 runFoundationsSuite : IO (Nat, Nat)

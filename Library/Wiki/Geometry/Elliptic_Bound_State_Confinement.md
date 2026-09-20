@@ -21,7 +21,7 @@ The 27 Vexel-Maxels represent the fundamental degree of freedom budget allocated
 The following literate Idris 2 module verifies multiset pushforward contraction under Elliptic confinement:
 
 ```idris
-module Geometry.Elliptic_Bound_State_Confinement
+module Wiki.Geometry.Elliptic_Bound_State_Confinement
 
 import Core.BoxInt
 import Core.Multiset

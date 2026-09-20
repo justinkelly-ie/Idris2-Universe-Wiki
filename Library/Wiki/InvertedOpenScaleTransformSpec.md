@@ -4,7 +4,18 @@ Documents and verifies the inverted open plugin architecture for cross-domain sc
 
 ---
 
-## 1. Architectural & Category-Theoretic Homomorphisms
+## 1. Inverted Open Scale Category $\leftrightarrow$ Multiset Functor Duality Dictionary
+
+| Ecosystem Architectural Construct | Category-Theoretic Scale Functor Dual | Native Multiset Implementation |
+| :--- | :--- | :--- |
+| **Cross-Domain Scale Functor** | Inverted Open Plugin Scale Functor | `ScaleFunctor src tgt tokA tokB` |
+| **Functorial Pipeline Composition** | Morphism Composition $\mathbf{S}_4 \circ \mathbf{S}_3 \circ \mathbf{S}_2 \circ \mathbf{S}_1$ | `composeScaleTransform {b = BoxInt} val` |
+| **Scale Invertibility Roundtrip** | Scale Category Isomorphism $\mathbf{S}^{-1} \circ \mathbf{S} = \mathrm{id}$ | `prop_invertibleScaleTransformInversion : BoxInt -> Bool` |
+| **Master Ecosystem Auditor** | Full Category Reflection Homomorphism | `auditMasterEcosystem : IO Bool` |
+
+---
+
+## 2. Architectural & Category-Theoretic Homomorphisms
 
 1. **Inverted Open Scale Interface (`Core.ScaleCategory`)**: Located in `Idris2-Multiset-Transform` (Layer 1), defining `ScaleLevel` (`SubatomicLevel` to `CellLevel`) and `ScaleFunctor src tgt tokA tokB`.
 2. **Functorial Pipeline Composition Homomorphism**: $\mathbf{S}_{\text{total}} \equiv \mathbf{S}_4 \circ (\mathbf{S}_3 \circ (\mathbf{S}_2 \circ \mathbf{S}_1))$
@@ -13,8 +24,10 @@ Documents and verifies the inverted open plugin architecture for cross-domain sc
 
 ---
 
+## 3. Formal Specification & Verification Suite
+
 ```idris
-module InvertedOpenScaleTransformSpec
+module Wiki.InvertedOpenScaleTransformSpec
 
 import Core.ScaleTransform
 import Core.BoxInt

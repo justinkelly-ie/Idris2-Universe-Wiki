@@ -1,17 +1,19 @@
-module Main
+module Wiki.Main
 
-import Verification.Witnesses.UnifiedWitnesses
-import Verification.Witnesses.MotivicGalois
-import Verification.TestHarness
-import Verification.FoundationsSuite
-import Verification.PhysicalLawsSuite
-import Verification.EmpiricalObservationSuite
-import Verification.ScalePipelineSuite
+import Derivation.MultisetTheoremExporter
+import Wiki.Verification.Witnesses.UnifiedWitnesses
+import Wiki.Verification.Witnesses.MotivicGalois
+import Wiki.Verification.TestHarness
+import Wiki.Verification.FoundationsSuite
+import Wiki.Verification.PhysicalLawsSuite
+import Wiki.Verification.EmpiricalObservationSuite
+import Wiki.Verification.ScalePipelineSuite
 
 %default total
 
 main : IO ()
 main = do
+  exportAllProofsIO
   putStrLn "========================================================"
   putStrLn "   Idris2-Universe Verification & Cosmological Suite   "
   putStrLn "   (Declarative Type-Driven Modular Architecture)      "
@@ -29,5 +31,5 @@ main = do
   let totalFail = fF + pF + eF + sF
   putStrLn "========================================================"
   putStrLn $ " Total Verification Results: " ++ show totalPass ++ " PASSED, " ++ show totalFail ++ " FAILED"
-  putStrLn " All 172 Cosmological Proof Witnesses & Invariants Verified!"
+  putStrLn $ " All " ++ show totalPass ++ " Cosmological Proof Witnesses & Invariants Verified!"
   putStrLn "========================================================"

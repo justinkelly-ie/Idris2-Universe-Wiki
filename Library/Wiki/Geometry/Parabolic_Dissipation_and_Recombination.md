@@ -21,7 +21,7 @@ The 55 Dyck-Maxels represent the total dissipation capacity budget ($1 + 2 + 3 +
 The following literate Idris 2 module verifies Parabolic recombination drain contraction:
 
 ```idris
-module Geometry.Parabolic_Dissipation_and_Recombination
+module Wiki.Geometry.Parabolic_Dissipation_and_Recombination
 
 import Core.BoxInt
 import Core.Multiset

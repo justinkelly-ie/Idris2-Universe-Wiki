@@ -1,13 +1,14 @@
-module Verification.ScalePipelineSuite
+module Wiki.Verification.ScalePipelineSuite
 
-import InvertedOpenScaleTransformSpec
 import Reflect.InvariantAuditor
-import Verification.TestHarness
-import Verification.Witnesses.UnifiedWitnesses
+import Wiki.InvertedOpenScaleTransformSpec
+import Wiki.ScalePipelineStreamSpec
+import Wiki.Verification.TestHarness
+import Wiki.Verification.Witnesses.UnifiedWitnesses
 
 export
 runScalePipelineSuite : IO (Nat, Nat)
-runScalePipelineSuite = runTestSuite "Functorial Scale Pipeline & Galois Adjunctions (Tests 135 - 166, 172)"
+runScalePipelineSuite = runTestSuite "Functorial Scale Pipeline & Galois Adjunctions (Tests 135 - 166, 172 - 173)"
   [ MkTestCase 135 "Pure Algebraic Galois Connection (f_* ⊣ f^*)" auditGaloisConnectionProofExport
   , MkTestCase 136 "Idris 2 Control.App Linear Resource Architecture" auditUniverseAppProofExport
   , MkTestCase 137 "Multi-System Control.App Interaction Architecture" auditMultiSystemInteractionProofExport
@@ -41,4 +42,5 @@ runScalePipelineSuite = runTestSuite "Functorial Scale Pipeline & Galois Adjunct
   , MkTestCase 165 "Quantum Stress-Energy Tensor in Curved Spacetime <T_μν>" auditQuantumStressTensorProofExport
   , MkTestCase 166 "Active Inference Neural Networks & Free Energy Minimization" auditFunctorialPipelineProofExport
   , MkTestCase 172 "Inverted Open Universe Scale Transform Architecture" auditInvertedOpenScaleTransformProof
+  , MkTestCase 173 "Deforested Scale Pipeline Stream Hylomorphism (T_total)" auditScalePipelineStreamProof
   ]

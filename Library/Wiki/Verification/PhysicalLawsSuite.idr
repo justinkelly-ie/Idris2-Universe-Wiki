@@ -1,8 +1,8 @@
-module Verification.PhysicalLawsSuite
+module Wiki.Verification.PhysicalLawsSuite
 
 import Reflect.InvariantAuditor
-import Verification.TestHarness
-import Verification.Witnesses.UnifiedWitnesses
+import Wiki.Verification.TestHarness
+import Wiki.Verification.Witnesses.UnifiedWitnesses
 
 export
 runPhysicalLawsSuite : IO (Nat, Nat)
