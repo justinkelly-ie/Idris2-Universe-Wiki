@@ -1,6 +1,6 @@
 # 🔭 Cosmological Inferences, Quantum Deductions & Elaborator Verification
 
-In **Idris2-Universe**, physical constants, quantum phenomena, cosmological energy fractions, and thermodynamic arrows are not free empirical parameters—they are **derived theorems of constructive information geometry and Quantitative Type Theory (QTT)**.
+In **FinSc-Universe**, physical constants, quantum phenomena, cosmological energy fractions, and thermodynamic arrows are not free empirical parameters—they are **derived theorems of constructive information geometry and Quantitative Type Theory (QTT)**.
 
 ---
 

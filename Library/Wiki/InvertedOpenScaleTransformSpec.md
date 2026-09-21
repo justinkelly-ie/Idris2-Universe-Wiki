@@ -17,7 +17,7 @@ Documents and verifies the inverted open plugin architecture for cross-domain sc
 
 ## 2. Architectural & Category-Theoretic Homomorphisms
 
-1. **Inverted Open Scale Interface (`Core.ScaleCategory`)**: Located in `Idris2-Multiset-Transform` (Layer 1), defining `ScaleLevel` (`SubatomicLevel` to `CellLevel`) and `ScaleFunctor src tgt tokA tokB`.
+1. **Inverted Open Scale Interface (`Core.ScaleCategory`)**: Located in `FinSc-Multiset-Transform` (Layer 1), defining `ScaleLevel` (`SubatomicLevel` to `CellLevel`) and `ScaleFunctor src tgt tokA tokB`.
 2. **Functorial Pipeline Composition Homomorphism**: $\mathbf{S}_{\text{total}} \equiv \mathbf{S}_4 \circ (\mathbf{S}_3 \circ (\mathbf{S}_2 \circ \mathbf{S}_1))$
 3. **Master Ecosystem Reflection Homomorphism**: $\text{allTrue}(\text{masterEcosystemCatalogWitnesses}) \equiv \text{True}$
 4. **Infinite Open Scalability**: Domain packages plug in automatically without editing `Universe`.

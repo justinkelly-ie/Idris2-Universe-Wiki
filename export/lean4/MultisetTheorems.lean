@@ -1,5 +1,5 @@
 -- Certified Lean 4 Mathlib Export for Multiset System Theorems
--- Generated automatically by Idris2-Universe MultisetTheoremExporter
+-- Generated automatically by FinSc-Universe MultisetTheoremExporter
 
 def multiset_lattice_transport : TransformMultiset α β := { sector := MetricSector.Elliptic, fraction := 1/27, mapping := f }
 def multiset_bz_reaction : TransformMultiset α β := { sector := MetricSector.Elliptic, fraction := 1/27, mapping := f }

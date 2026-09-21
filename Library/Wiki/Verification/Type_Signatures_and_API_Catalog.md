@@ -1,6 +1,6 @@
 # 📋 Type Signatures & API Catalog
 
-This document provides an **automatically generated, authoritative reference** for all data types, records, type aliases, and primary state transitions in `Idris2-Universe`.
+This document provides an **automatically generated, authoritative reference** for all data types, records, type aliases, and primary state transitions in `FinSc-Universe`.
 
 > [!NOTE]
 > This catalog is generated dynamically from the codebase source files via `Scripts/generate_type_catalog.py`.

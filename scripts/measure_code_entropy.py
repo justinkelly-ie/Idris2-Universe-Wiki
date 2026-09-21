@@ -95,19 +95,19 @@ def scan_dir(directory, ext):
     }
 
 if __name__ == '__main__':
-    p1 = '/var/home/justin/Projects/Idris2-Universe2/src'
-    p2 = '/var/home/justin/Projects/Idris2-Universe2-Wiki/Library/Wiki'
+    p1 = '/var/home/justin/Projects/FinSc-Universe2/src'
+    p2 = '/var/home/justin/Projects/FinSc-Universe2-Wiki/Library/Wiki'
 
     res1 = scan_dir(p1, '.idr')
     res2 = scan_dir(p2, ('.idr', '.md'))
 
-    print("=== Idris2-Universe2 (Core Codebase Benchmark) ===")
+    print("=== FinSc-Universe2 (Core Codebase Benchmark) ===")
     print(f"Files: {res1['count']} | Bytes: {res1['total_bytes']:,} | Tokens: {res1['total_tokens']:,}")
     print(f"Shannon Byte Entropy (H_byte): {res1['overall_byte_entropy']:.4f} bits/byte")
     print(f"Shannon Token Entropy (H_token): {res1['overall_token_entropy']:.4f} bits/token")
     print(f"Hehner Byte Bit Depth (b_byte): {res1['hehner_b_bytes']} bits | Chance: 1 / {res1['total_bytes']:,}")
 
-    print("\n=== Idris2-Universe2-Wiki (Literate Wiki Benchmark) ===")
+    print("\n=== FinSc-Universe2-Wiki (Literate Wiki Benchmark) ===")
     print(f"Files: {res2['count']} | Bytes: {res2['total_bytes']:,} | Tokens: {res2['total_tokens']:,}")
     print(f"Shannon Byte Entropy (H_byte): {res2['overall_byte_entropy']:.4f} bits/byte")
     print(f"Shannon Token Entropy (H_token): {res2['overall_token_entropy']:.4f} bits/token")

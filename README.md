@@ -1,16 +1,16 @@
-# 📘 Idris2-Universe-Wiki (Master Verification Engine)
+# 📘 FinSc-Universe-Wiki (Master Verification Engine)
 
 [![Idris 2 Verification](https://img.shields.io/badge/Idris_2-0.8.0-blue.svg)](https://www.idris-lang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Master Verification Suite](https://img.shields.io/badge/Witnesses-174%2F174%20PASSED-brightgreen.svg)]()
 
-Master Verification Executable & Literate Evidence Suite for `Idris2-Universe`.
+Master Verification Executable & Literate Evidence Suite for `FinSc-Universe`.
 
 ---
 
 ## 📚 Master Verification Suite (174 Witnesses)
 
-`Idris2-Universe-Wiki` builds the `universe-verify` executable binary, which executes the full 174-witness verification suite across all ecosystem domain layers:
+`FinSc-Universe-Wiki` builds the `universe-verify` executable binary, which executes the full 174-witness verification suite across all ecosystem domain layers:
 
 - **Tests 1–64 (Foundations Suite):** Discrete box algebra, multiset 2-categories, tensor operators, Category-Theoretic `MultisetAdjunction` ($L \dashv R$), Clifford geometric products, and contour geometry.
 - **Tests 65–130 (Physical Laws Suite):** Jarzynski equality, Wheeler-DeWitt equation, Chiral Anomaly, Kitaev Toric Code, BCS Superconductivity, Hawking-Unruh radiation, TOV mass limits, and Ribosomal Translation.

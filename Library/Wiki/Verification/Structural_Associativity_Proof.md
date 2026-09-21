@@ -1,6 +1,6 @@
 # ⚖️ Formal Proof: Structural Accounting Associativity Across Scale Transitions
 
-In **Idris2-Universe**, scale transitions partition the total state space between **Visible Matter ($VM = 27$)**, **Dark Energy ($DE = 128$)**, and **Dark Matter ($DM = 55$)**.
+In **FinSc-Universe**, scale transitions partition the total state space between **Visible Matter ($VM = 27$)**, **Dark Energy ($DE = 128$)**, and **Dark Matter ($DM = 55$)**.
 
 To guarantee that no computational or physical leakage occurs during scale transitions, the structural token summation engine `sumStructural` must satisfy the **Associative Law**:
 

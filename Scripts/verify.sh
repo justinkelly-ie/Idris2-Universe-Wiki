@@ -2,11 +2,11 @@
 set -e
 
 echo "========================================================"
-echo "   Building & Running Idris2-Universe-Wiki System Suite  "
+echo "   Building & Running FinSc-Universe-Wiki System Suite  "
 echo "========================================================"
 echo ""
 
-pack build Idris2-Universe-Wiki.ipkg
+pack build FinSc-Universe-Wiki.ipkg
 ./build/exec/universe-verify
 
 echo ""

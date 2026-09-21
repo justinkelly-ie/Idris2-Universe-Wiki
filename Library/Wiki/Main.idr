@@ -15,7 +15,7 @@ main : IO ()
 main = do
   exportAllProofsIO
   putStrLn "========================================================"
-  putStrLn "   Idris2-Universe Verification & Cosmological Suite   "
+  putStrLn "   FinSc-Universe Verification & Cosmological Suite   "
   putStrLn "   (Declarative Type-Driven Modular Architecture)      "
   putStrLn "========================================================"
   putStrLn ""

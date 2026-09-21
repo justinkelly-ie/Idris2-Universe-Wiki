@@ -1,8 +1,8 @@
-package Idris2-Cosmos-Wiki
+package FinSc-Cosmos-Wiki-Core
 version = 0.3.0
 opts = "--codegen chez"
 
-depends = Idris2-Biology, Idris2-Chemistry, Idris2-Cosmology, Idris2-Electromagnetism, Idris2-Fields, Idris2-Geometry, Idris2-Hadron, Idris2-Multiset-Binary, Idris2-Multiset-Core, Idris2-Multiset-Ternary, Idris2-Multiset-Transform, Idris2-Physics, Idris2-QuantumComputing, Idris2-Thermodynamics, Idris2-Topology, Idris2-Cosmos, base, idris2-QuickCheck, linear
+depends = FinSc-Biology, FinSc-Chemistry, FinSc-Cosmology, FinSc-Electromagnetism, FinSc-Fields, FinSc-Geometry, FinSc-Hadron, FinSc-Multiset-Binary, FinSc-Multiset-Core, FinSc-Multiset-Ternary, FinSc-Multiset-Transform, FinSc-Physics, FinSc-QuantumComputing, FinSc-Thermodynamics, FinSc-Topology, FinSc-Cosmos, base, idris2-QuickCheck, linear
 sourcedir = "Library"
 
 modules = Wiki.EmpiricalMeasurementSpec,
@@ -16,7 +16,7 @@ modules = Wiki.EmpiricalMeasurementSpec,
           Wiki.Index,
           Wiki.InvertedOpenScaleTransformSpec,
           Wiki.Main,
-          Wiki.ScalePipelineStreamSpec,
+          Wiki.MultisetApplicativeMonoidAdjunctionSpec,
           Wiki.Verification.Cosmological_Inferences_and_Deductions,
           Wiki.Verification.EmpiricalObservationSuite,
           Wiki.Verification.FoundationsSuite,
@@ -26,9 +26,10 @@ modules = Wiki.EmpiricalMeasurementSpec,
           Wiki.Verification.ScalePipelineSuite,
           Wiki.Verification.Structural_Associativity_Proof,
           Wiki.Verification.TestHarness,
+          Wiki.Verification.Type_Signatures_and_API_Catalog,
           Wiki.Verification.Verification_Matrix,
           Wiki.Verification.Witnesses.MotivicGalois,
           Wiki.Verification.Witnesses.UnifiedWitnesses
 
-main = Wiki.Main
-executable = cosmos-verify
+main = MainCore
+executable = universe-verify-core

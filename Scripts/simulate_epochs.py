@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Idris2-Universe2 Multi-Epoch Evolution, Expansion, and Collapse Simulator
+FinSc-Universe2 Multi-Epoch Evolution, Expansion, and Collapse Simulator
 ========================================================================
-Executes the exact discrete mathematical pipeline defined in Idris2-Universe2:
+Executes the exact discrete mathematical pipeline defined in FinSc-Universe2:
 - 27-State Ternary Spacetime Multiverse Matrix Permutations
 - Genesis Vacuum Seed (Epoch 1)
 - 137-Stage Computational Cycle with Lattice Expansion (1x1 -> 2x2 -> 3x3)

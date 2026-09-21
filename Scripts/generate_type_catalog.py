@@ -2,10 +2,10 @@
 """
 generate_type_catalog.py
 
-Dynamic generator for the Type Signatures and API Catalog of Idris2-Universe2.
-Scans all .idr source files in Idris2-Universe2/src, extracts records, data types,
+Dynamic generator for the Type Signatures and API Catalog of FinSc-Universe2.
+Scans all .idr source files in FinSc-Universe2/src, extracts records, data types,
 type aliases, and exported functions/macros, and outputs a formatted Markdown
-wiki page in Idris2-Universe2-Wiki/Library/Wiki/Verification/Type_Signatures_and_API_Catalog.md.
+wiki page in FinSc-Universe2-Wiki/Library/Wiki/Verification/Type_Signatures_and_API_Catalog.md.
 """
 
 import os
@@ -149,7 +149,7 @@ def generate_catalog(src_dir, output_file):
     md = []
     md.append("# 📋 Type Signatures & API Catalog")
     md.append("")
-    md.append("This document provides an **automatically generated, authoritative reference** for all data types, records, type aliases, and primary state transitions in `Idris2-Universe2`.")
+    md.append("This document provides an **automatically generated, authoritative reference** for all data types, records, type aliases, and primary state transitions in `FinSc-Universe2`.")
     md.append("")
     md.append("> [!NOTE]")
     md.append("> This catalog is generated dynamically from the codebase source files via `Scripts/generate_type_catalog.py`.")
@@ -237,8 +237,8 @@ def generate_catalog(src_dir, output_file):
 if __name__ == "__main__":
     script_dir = Path(__file__).resolve().parent
     base_proj = script_dir.parent.parent
-    src_dir = base_proj / "Idris2-Universe2" / "src"
-    output_file = base_proj / "Idris2-Universe2-Wiki" / "Library" / "Wiki" / "Verification" / "Type_Signatures_and_API_Catalog.md"
+    src_dir = base_proj / "FinSc-Universe2" / "src"
+    output_file = base_proj / "FinSc-Universe2-Wiki" / "Library" / "Wiki" / "Verification" / "Type_Signatures_and_API_Catalog.md"
     
     if len(sys.argv) > 1:
         src_dir = Path(sys.argv[1])
